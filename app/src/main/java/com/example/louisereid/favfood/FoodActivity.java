@@ -1,6 +1,7 @@
 package com.example.louisereid.favfood;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 
 public class FoodActivity extends AppCompatActivity {
 
+    private ImageView image;
     private TextView ranking;
     private TextView type;
 
@@ -24,6 +26,8 @@ public class FoodActivity extends AppCompatActivity {
 
         String rankingString = extras.get("ranking").toString();
         String typeString = extras.get("type").toString();
+
+
 
         ranking.setText(rankingString);
         type.setText(typeString);

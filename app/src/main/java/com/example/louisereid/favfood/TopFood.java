@@ -21,9 +21,9 @@ public class TopFood {
         list.add(new Food(R.drawable.burger, 5, "Beef Burger"));
         list.add(new Food(R.drawable.nachos, 6, "Nachos"));
         list.add(new Food(R.drawable.curry, 7, "Chicken Tika Masala"));
-        list.add(new Food(8, "Haggis"));
-        list.add(new Food(9, "Cheesy Puffs"));
-        list.add(new Food(10, "Jelly"));
+        list.add(new Food(R.drawable.haggis, 8, "Haggis"));
+        list.add(new Food(R.drawable.cheesypuffs, 9, "Cheesy Puffs"));
+        list.add(new Food(R.drawable.jelly, 10, "Jelly"));
     }
 
     public ArrayList<Food> getList() {

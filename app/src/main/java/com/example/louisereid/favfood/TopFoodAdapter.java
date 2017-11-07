@@ -26,8 +26,11 @@ public class TopFoodAdapter extends ArrayAdapter<Food> {
         }
         Food currentFood = getItem(position);
         ImageView image = (ImageView) listItemView.findViewById(R.id.listImage);
+        image.setImageResource(currentFood.getImage());
+
         TextView ranking = (TextView) listItemView.findViewById(R.id.listRanking);
         ranking.setText(currentFood.getRanking().toString());
+
         TextView type = (TextView) listItemView.findViewById(R.id.listType);
         type.setText(currentFood.getType());
 

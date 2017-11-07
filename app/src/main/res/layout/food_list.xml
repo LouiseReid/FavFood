@@ -12,24 +12,32 @@
         android:id="@+id/listRanking"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="16dp"
         android:textSize="36sp"
-        app:layout_constraintTop_toTopOf="parent"
         tools:text="ranking"
-        android:layout_marginLeft="8dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="16dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/listType"
-        android:layout_width="192dp"
-        android:layout_height="44dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
         android:layout_marginRight="8dp"
         android:textSize="18sp"
-        app:layout_constraintLeft_toRightOf="@+id/listRanking"
         app:layout_constraintRight_toRightOf="parent"
         tools:text="type"
-        app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="39dp" />
+        android:layout_marginTop="33dp"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/listRanking"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/background_dark" />
+
 </android.support.constraint.ConstraintLayout>

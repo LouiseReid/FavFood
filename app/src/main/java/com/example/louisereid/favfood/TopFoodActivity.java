@@ -30,6 +30,7 @@ public class TopFoodActivity extends AppCompatActivity {
         Intent i = new Intent(this, FoodActivity.class);
         i.putExtra("ranking", food.getRanking());
         i.putExtra("type", food.getType());
+        i.putExtra("image", food.getImage());
         startActivity(i);
 
     }
